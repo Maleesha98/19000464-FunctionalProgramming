@@ -28,7 +28,9 @@ object PrimeSequence extends App {
     }*/
   def printprime(x:Int,i:Int=2):Any= {
     if (x>i)
-      if(isprime(i)) println(i) else printprime(x,i+1)
+      if(isprime(i))
+           println(i)
+    printprime(x,i+1)
   }
   printprime(10)
 
